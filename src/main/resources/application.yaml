@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: spring-with-jwt
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: baonguyen
+    password: 123
+    url: jdbc:postgresql://localhost:5234/swj_database
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+
+  flyway:
+    enabled: true
+    user: baonguyen
+    password: 123
+    url: jdbc:postgresql://localhost:5234/swj_database
+

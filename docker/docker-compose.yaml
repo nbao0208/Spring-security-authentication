@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  swj-postgres:
+    image: postgres:14
+    volumes:
+      - postgres:/data/postgres
+    environment:
+      POSTGRES_USER: baonguyen
+      POSTGRES_PASSWORD: 123
+      PGDATA: /data/postgres
+      POSTGRES_DB: swj_database
+    ports:
+      - "5234:5432"
+    restart: unless-stopped
+volumes:
+  postgres:
